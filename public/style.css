@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 3rem;
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+main{
+    margin: 0 10rem 0 10rem;
+}
+#cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+.card{
+    width: 20rem;
+    box-shadow: 5px 5px 5px 5px #00000015;
+    padding: 1rem;
+}
+.card img{
+    width: 100%;
+}
+.card h2{
+    margin-bottom: 1rem;
+}
+#cadastro{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+#cadastro h2{
+    width: 100%;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+#cadastro input{
+    width: 100%;
+    padding: .7rem;
+    font-size: 1rem;
+    border-bottom-left-radius: 2rem;
+    margin: 0 0 2rem 0;
+}
+section#cadastro form button{
+    padding: .6rem;
+    width: 20%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: #fff;
+    border: solid 1px red;
+    color: red;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+section#cadastro form button:hover{
+    background-color: red;
+    color: #fff;
+}

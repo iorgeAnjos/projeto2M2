@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pokedex</h1>
+    </header>
+
+    <main>
+      <section id="cards">
+        <% pokedex.forEach((pokemon) =>{%>
+        <div class="card">
+          <img src="<%= pokemon.img %>" alt="" />
+          <h2><%= pokemon.nome %></h2>
+          <p><%= pokemon.tipo %></p>
+          <a href="/detalhes/<%= pokemon.id %>">Enviar</a>
+        </div>
+        <% }) %>
+      </section>
+      <section id="cadastro">
+        <%if(pokemon == undefined){%>
+        <h2>Cadastre um novo pokemon!</h2>
+        <form action="/add" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" />
+
+          <label for="tipo">Tipo:</label>
+          <input type="text" id="tipo" name="tipo" />
+
+          <label for="imagem">Link da imagem:</label>
+          <input type="text" id="img" name="img" />
+
+          <button id="btnCadastrar" type="submit">Cadastrar</button>
+        </form>
+        <%}else{%>
+        <h2>Atualize o pokemon!</h2>
+        <form action="/update/<%= pokemon.id %>" method="post">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            value="<%= pokemon.nome %>"
+          />
+
+          <label for="tipo">Tipo:</label>
+          <input
+            type="text"
+            id="tipo"
+            name="tipo"
+            value="<%= pokemon.tipo %>"
+          />
+
+          <label for="imagem">Link da imagem:</label>
+          <input type="text" id="img" name="img" value="<%= pokemon.img %>" />
+
+          <button id="btnCadastrar" type="submit">Cadastrar</button>
+        </form>
+        <%}%>
+      </section>
+    </main>
+  </body>
+</html>
