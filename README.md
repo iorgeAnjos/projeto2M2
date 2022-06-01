@@ -8,6 +8,7 @@ Pokedex link: https://pokedex-iorgeanjos.onrender.com
 
 # Detalhes²
 Esse projeto foi feito com base no proprio site da pokedex, onde obtive as informações para  colocar nos pokemons.
+
 Link do site: https://www.pokemon.com/br/pokedex/
 
 # Stacks
