@@ -97,6 +97,9 @@ dist
 # FuseBox cache
 .fusebox/
 
+# alterações do prettier
+.vscode
+
 # DynamoDB Local files
 .dynamodb/
 
