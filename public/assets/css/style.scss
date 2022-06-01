@@ -34,6 +34,47 @@ nav ul li a {
 main {
   margin: 0 10rem 0 10rem;
 }
+#cadastro {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+  color: rgb(107, 202, 226);
+}
+
+#cadastro h2 {
+  width: 100%;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+#cadastro input {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1.1rem;
+  border-bottom-left-radius: 2rem;
+  margin: 0 0 2rem 0;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  background-color: rgb(136, 0, 0);
+  color: rgb(107, 202, 226);
+}
+section#cadastro form button {
+  padding: 0.6rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  font-size: 1rem;
+  background-color: rgb(136, 0, 0);
+  border: solid 1px rgb(107, 202, 226);
+  color: rgb(107, 202, 226);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+section#cadastro form button:hover {
+  background-color: rgb(107, 202, 226);
+  color: rgb(136, 0, 0);
+  border: solid 1px rgb(136, 0, 0);
+}
 section#cards {
   display: flex;
   justify-content: space-evenly;
@@ -76,45 +117,41 @@ section#cards {
   text-decoration: none;
   color: rgb(107, 202, 226);
 }
-#cadastro {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 5rem;
-  color: rgb(107, 202, 226);
+
+@media (max-width: 1220px) {
+  .Header {
+    max-width: 720px;
+  }
 }
 
-#cadastro h2 {
-  width: 100%;
-  padding-bottom: 5rem;
-  text-align: center;
+@media (max-width: 840px) {
+  main{
+    margin: 0 2.5rem 0 2.5rem;
+  }
 }
-#cadastro input {
-  width: 100%;
-  padding: 0.6rem;
-  font-size: 1.1rem;
-  border-bottom-left-radius: 2rem;
-  margin: 0 0 2rem 0;
-  box-shadow: 0 0 0 0;
-  outline: 0;
-  background-color: rgb(136, 0, 0);
-  color: rgb(107, 202, 226);
+
+@media (max-width: 400px) {
+  h2#registro{
+    display: flex;
+
+  }
 }
-section#cadastro form button {
-  padding: 0.6rem;
-  width: 20%;
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  font-size: 1rem;
-  background-color: rgb(136, 0, 0);
-  border: solid 1px rgb(107, 202, 226);
-  color: rgb(107, 202, 226);
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+@media (max-width: 1220px) {
+  .Header {
+    max-width: 720px;
+  }
 }
-section#cadastro form button:hover {
-  background-color: rgb(107, 202, 226);
-  color: rgb(136, 0, 0);
-  border: solid 1px rgb(136, 0, 0);
+
+@media (max-width: 840px) {
+  #cadastro input {
+    width: 100%;
+  }
 }
+
+@media (max-width: 400px) {
+  #cadastro h2{
+    display: flex;
+    justify-content: center;
+  }
+}
+
